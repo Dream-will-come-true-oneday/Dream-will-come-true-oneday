@@ -10,6 +10,8 @@ I am an undergraduate student majoring in **Network Engineering** at [Henan Univ
 
 I work mainly with **Python** and **Java**, with hands-on experience in LangChain Tool Calling, LLM API integration, prompt engineering, RAG pipelines, FastAPI, Docker, Redis, Linux, and MCP-based tool integration.
 
+My long-term vision is **embodied intelligence**: giving Agents real hands in the physical world, so they can move from reasoning on screens to perceiving and acting in reality.
+
 ## 💼 Work Experience
 
 ### 🔵 BlueFocus · AI Agent Development Intern
