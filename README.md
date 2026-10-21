@@ -2,27 +2,29 @@
 
 # Leonardo · 杨涛华
 
-### AI Agent Developer · Python · Long-horizon Workflows / Agent Infrastructure
+### AI Agent Developer · Python · Agent Harness / Context Engineering / Long-horizon Workflows
 
 <p>
   <a href="https://github.com/Dream-will-come-true-oneday"><img src="https://img.shields.io/badge/GitHub-Dream--will--come--true--oneday-181717?style=flat-square&logo=github" alt="GitHub profile" /></a>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/MCP-111827?style=flat-square" alt="MCP" />
+  <img src="https://img.shields.io/badge/LangGraph-1.0-1a7f37?style=flat-square" alt="LangGraph" />
 </p>
 
 </div>
 
-I am an undergraduate student majoring in **Network Engineering** at [Henan University](https://www.henu.edu.cn/) (Double First-Class), graduating in 2027. I am looking for opportunities in **AI Agent development**, with a focus on long-horizon task orchestration, tool reliability, async performance optimization, and production-grade execution.
+I am an undergraduate student majoring in **Network Engineering** at [Henan University](https://www.henu.edu.cn/) (Double First-Class), graduating in 2027. I am looking for opportunities in **AI Agent development**, with a focus on agent harness design, context engineering, protocol-level tool integration, and production-grade long-horizon workflows.
 
-I enjoy turning complex model capabilities into usable engineering systems — building agents that can plan, execute, recover, and deliver real business value. My long-term vision is **embodied intelligence**: giving Agents real hands in the physical world, so they can move from reasoning on screens to perceiving and acting in reality.
+I enjoy turning complex model capabilities into reliable engineering systems — building agents that can plan, execute, recover, and deliver real business value. My long-term vision is **embodied intelligence**: giving Agents real hands in the physical world, so they can move from reasoning on screens to perceiving and acting in reality.
 
 ## 🧠 Professional Skills
 
-- **Agent frameworks:** LangGraph (SubGraph orchestration, PostgreSQL Checkpointer state persistence, interrupt human-in-the-loop checkpoints), LangChain, Plan-and-Execute paradigm, and long-horizon task reliability design (checkpoint resume, node-level replay). Familiar with MCP protocol and tool dispatch.
-- **LLM application engineering:** Prompt Engineering, Function Calling, structured output (JSON Mode / with_structured_output layered approach), and multi-model dynamic routing with cost optimization — shipped practice that reduced inference cost by 40%.
-- **AI development tools:** Proficient with Claude Code for requirement decomposition, code generation, and debugging; layer Copilot line-level completion with Claude Code for complex refactoring; experienced in AI output validation and hallucination detection.
-- **Async & high availability:** Deep understanding of Python async IO (asyncio.gather concurrent scheduling, run_in_executor coroutinization), exponential backoff retry, circuit breaker three-state model, and rate limiting — with hands-on multi-tool parallel performance optimization.
-- **Backend & observability:** FastAPI for RESTful APIs and SSE streaming endpoints, PostgreSQL, Redis, LangSmith full-link tracing, structlog structured logging, Git, Docker, and Linux development environments.
+- **Agent Harness & orchestration:** Proficient with LangGraph 1.x (SubGraph orchestration, PostgreSQL Checkpointer state persistence, interrupt approval checkpoints); understand the Framework / Harness / Runtime three-layer division of labor. Familiar with the positioning differences of OpenAI Agents SDK, Microsoft Agent Framework, and Google ADK.
+- **Context engineering:** Context compression and offloading, structured handoff (goal / completed / next steps / key files / blockers / constraints), Tool Search / Schema lazy loading, token budgeting and per-task cost accounting; structured output schema design and validation.
+- **Protocols & capability encapsulation:** Familiar with MCP protocol and tool dispatch, including MCP stateless core, A2A (Agent-to-Agent communication), and AG-UI (frontend event streaming). Understand Skills / SKILL.md progressive disclosure and AGENTS.md conventions.
+- **Engineering & observability:** FastAPI + SSE streaming endpoints, PostgreSQL / MySQL / Redis, LangSmith full-link tracing, structlog structured logging. Familiar with OpenTelemetry GenAI semantic conventions. Git, Docker, Linux development environments.
+- **Async, high availability & cost:** asyncio.gather concurrent scheduling, run_in_executor coroutinization, exponential backoff retry, circuit breaker three-state model, rate limiting. Model routing and cost optimization — shipped practice that reduced per-task cost by **40%**.
+- **AI development tools:** Use Claude Code for requirement decomposition, code generation, and refactoring/debugging; experienced in AI output validation and hallucination detection.
 
 ## 💼 Internship Experience
 
@@ -30,11 +32,11 @@ I enjoy turning complex model capabilities into usable engineering systems — b
 
 `2026.03 - 2026.07`
 
-Built agent-powered creative analysis pipelines for livestream material production, optimizing processing throughput, detection accuracy, and video architecture at scale.
+Built agent-powered creative analysis pipelines for livestream material production, optimizing multimodal understanding, processing throughput, and browser-side video architecture.
 
-- **Livestream clip pipeline parallelization:** Addressed serial processing bottlenecks by implementing concurrent calls to Volcano ASR and Doubao LLM (asyncio.gather + Semaphore rate limiting). Reduced single-task processing time by **72%**, with 429 error rate kept below **1%** through careful API quota control.
-- **Multi-signal highlight detection algorithm:** Solved pure-text LLM accuracy ceiling (~70%) with a three-signal weighted fusion approach — audio energy peaks (librosa), danmaku (bullet comment) heat, and Doubao text understanding. Boosted highlight recognition accuracy to **90%+** and user adoption rate from 45% to **68%**.
-- **Browser-side video processing architecture refactor:** Rebuilt the pipeline as a pure-frontend FFmpeg.wasm architecture. Used WORKERFS virtual filesystem for zero-copy mounting, enabling GB-level on-demand file reading in the browser. Reduced memory usage to **50MB** (**-99%**); extracted audio in-browser and uploaded only 30MB, shrinking upload volume by **99%** and completely removing server-side FFmpeg dependency.
+- **Multimodal content understanding & highlight detection:** Addressed pure-text LLM accuracy ceiling (~70%) with a three-signal weighted scoring approach — audio energy peaks (librosa), danmaku (bullet comment) heat, and Doubao 2.0 text understanding. Validated on **500+ real samples**, boosting accuracy to **90%+** and clip adoption rate from 45% to **68%**. Evaluated a frame-extraction + multimodal end-to-end approach but deferred due to per-call cost and latency; listed as a visual-model iteration direction.
+- **Livestream clip pipeline parallelization:** Addressed serial processing bottlenecks (6-hour replay taking 18 minutes) by implementing concurrent Volcano ASR and Doubao LLM calls (asyncio.gather + Semaphore with concurrency limits derived from API quotas). Reduced single-task processing from 18 min to **5 min (-72%)**, with 429 rate kept below **1%**.
+- **Browser-side video processing architecture refactor:** Compared WebCodecs vs FFmpeg.wasm and chose FFmpeg.wasm for Safari compatibility and muxer/demuxer implementation cost. Used WORKERFS zero-copy mounting for GB-level on-demand file reading in-browser. Reduced memory from 5GB to **50MB**; extracted 16kHz mono audio in-browser and uploaded only 30MB (from 2.5GB), completely removing server-side FFmpeg dependency.
 
 ### 🟣 MiniMax (Xiyi Technology) · Product R&D · Agent Backend Development Intern
 
@@ -43,8 +45,8 @@ Built agent-powered creative analysis pipelines for livestream material producti
 Built agent tool infrastructure, long-horizon runtime reliability, and evaluation systems for production-grade LLM applications.
 
 - **Tool invocation system:** Co-designed a Tool Registry and executor layer, unifying Schema validation, permissions, timeout/retry, circuit breaking, and critical/non-critical degradation across **23 internal tools**. Reduced parameter error rate from 9% to **1.2%**, improved call success rate to **99.2%**, and cut onboarding time for new tools from 2 weeks to **1 day**.
-- **Long-horizon task runtime:** Implemented human-in-the-loop checkpoints, breakpoint recovery, and resume idempotency using LangGraph interrupt + PostgreSQL Checkpointer. Achieved **100%** fault-injection recovery rate (80/80), improved cross-day task completion from 87% to **98%**, and reduced breakpoint rerun cost by **67%**.
-- **Evaluation & tracing:** Built node-level Trace collection and a four-layer evaluation framework (result / process / efficiency / risk). Created a **500-item** golden / error-case / challenge dataset combining rule-based checks, LLM judges, and human spot-checking for failure attribution. Surfaced **37 regression issues**, reducing problem diagnosis time from 2 hours to **15 minutes**.
+- **Long-horizon task runtime:** Implemented human-approval checkpoints, node-level breakpoint recovery, and resume idempotency using LangGraph interrupt + PostgreSQL Checkpointer. All **80 fault-injection scenarios** (process crash / network jitter / DB disconnect / duplicate resume) recovered successfully. Improved cross-day task completion from 87% to **98%**, and reduced breakpoint rerun cost by **67%**.
+- **Evaluation & tracing:** Built node-level Trace and trajectory evaluation organized by four dimensions (result / process / efficiency / risk). Created a **500-item** golden / error-case / challenge dataset with three-level scoring (rules + LLM judge + human spot-check) and calibration of judge consistency. Bad cases feed back into the regression set; surfaced **37 issues** total, reducing diagnosis time from 2 hours to **15 minutes**.
 
 ## 🛠️ Project Experience
 
@@ -54,9 +56,9 @@ Built agent tool infrastructure, long-horizon runtime reliability, and evaluatio
 
 A terminal-based coding Agent supporting multiple LLM providers and MCP extensions, built around a complete loop of reasoning, tool calling, result handling, and continued action.
 
-- **Two-level context compression:** Gradually compresses conversation history by session scale; designed a Function Calling pair validation chain to prevent result-loss exceptions, supporting hours of continuous coding without losing critical context.
-- **MCP dynamic dispatch:** Built a local tool discovery index with "search-triggered + Schema dynamic injection" — reducing context usage by **82%** in tool libraries with hundreds of definitions, solving long-session window overflow.
-- **Five-layer security defense:** Designed a multi-layer defense system covering sandbox isolation, path filtering, and human-in-the-loop (HITL) approval, with explainable audit logs making every Agent decision fully traceable.
+- **Context engineering:** Gradually compresses conversation history by session scale; triggers structured handoff (goal / completed / next steps / key files / blockers / constraints) when thresholds are exceeded. Designed a Function Calling pair validation chain to prevent result-loss exceptions, supporting hours of continuous coding without losing critical context.
+- **MCP dynamic dispatch:** Built a local tool discovery index using "search-triggered + on-demand Schema injection" — a tool search / lazy loading approach. Reduced context usage by **82%** in tool libraries with hundreds of definitions, solving long-session window overflow.
+- **Agent runtime security:** Multi-layer defense including sandbox-isolated execution, path normalization and boundary interception, tool-level permissions, high-risk operation HITL approval, and full-chain explainable audit — making every Agent decision path fully traceable.
 
 ## 🎓 Education
 
